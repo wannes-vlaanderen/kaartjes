@@ -26,17 +26,17 @@
     }
   </style>
   <link rel="icon" href="https://omgeving.vlaanderen.be/sites/default/files/favicon.ico">
-  <title>Klikbare kaartjes</title>
+  <title id='titel'>Klikbare kaartjes</title>
 </head>
 
 <body>
   <div style="display:flex;flex-flow:column;align-items:stretch;height:100%;width:100%">
     <div style="flex: 0 1;heigth:20px;background-color=SlateBlue;">
-      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/poort-limburg'">Poort Limburg</button>
-      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/poort-west-limburg'">Poort West-Limburg</button>
-      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/wommelgem-ranst'">Wommelgem-Ranst</button>
-      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/ena-projecten'">ENA Projecten</button>
-      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/strategische-projecten'">Strategische Projecten</button>
+      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/poort-limburg';document.getElementById('titel').innerHTML='Poort Limburg'">Poort Limburg</button>
+      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/poort-west-limburg';document.getElementById('titel').innerHTML='Poort West-Limburg'">Poort West-Limburg</button>
+      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/wommelgem-ranst';document.getElementById('titel').innerHTML='Wommelgem-Ranst'">Wommelgem-Ranst</button>
+      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/ena-projecten';document.getElementById('titel').innerHTML='ENA Projecten'">ENA - Economisch Netwerk Albertkanaal</button>
+      <button onclick="document.getElementById('frame').src='https://wannes-vlaanderen.github.io/strategische-projecten';document.getElementById('titel').innerHTML='Strategische Projecten'">Strategische Projecten</button>
     </div>
     <iframe src="https://wannes-vlaanderen.github.io/poort-limburg" id="frame" style="flex: 1 1;width:100%;height:90%"></iframe>
   </div>
